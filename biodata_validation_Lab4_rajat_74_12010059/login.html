@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Resume Login Screen</title>
+		<link rel="shortcut icon" href="./assets/Images/rh.png" />
+		<link href="./styles.css" rel="stylesheet"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			body{
+				margin: 10px; 
+        			padding: 10px;
+				color: aliceblue;
+				font-size:large;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				background-color: rgba(103, 161, 163, 0.582);
+				background-size: 100vmax;
+			}
+			[id=tile]{
+				background-color:rgba(22, 54, 51, 0.518);
+				display:flex;
+				justify-content:space-between;
+				border-radius: 15px;
+				width:fit-content;
+				min-width: 95vw;
+				border-style:groove;
+			}
+			[id=content]{
+				margin-top: 16px;
+				margin-left: 20px;
+				margin-right: 20px;
+				margin-bottom: 8px;
+				display:inline-flex;
+			}
+		</style>
+	</head>
+	<body>
+		<section style="align:center">
+			<h1>Login to Proceed</h1>
+		</section>
+		<div id="tile">
+			<div id ="content">
+			<label for="uname" style="font-size: 24px; margin: 0px; margin-bottom: 5px"><b>Username</b>
+			<input type="email"/></label>	
+			<label for="psw" style="font-size: 24px; margin: 0px; margin-bottom: 5px"><b>Password</b>
+			<input type="password"/></label>
+			<button>Log In 🎟️
+			</button>
+			</div>
+		</div>
+	</body>
+</html>
