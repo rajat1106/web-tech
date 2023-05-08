@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Resume Login Screen</title>
-		<link rel="shortcut icon" href="./assets/Images/rh.png" />
-		<link href="./styles.css" rel="stylesheet"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<style>
-			body{
-				margin: 10px; 
-        			padding: 10px;
-				color: aliceblue;
-				font-size:large;
-				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-				background-color: rgba(103, 161, 163, 0.582);
-				background-size: 100vmax;
-			}
-			[id=tile]{
-				background-color:rgba(22, 54, 51, 0.518);
-				display:flex;
-				justify-content:space-between;
-				border-radius: 15px;
-				width:fit-content;
-				min-width: 95vw;
-				border-style:groove;
-			}
-			[id=content]{
-				margin-top: 16px;
-				margin-left: 20px;
-				margin-right: 20px;
-				margin-bottom: 8px;
-				display:inline-flex;
-			}
-		</style>
-	</head>
-	<body>
-		<section style="align:center">
-			<h1>Login to Proceed</h1>
-		</section>
-		<div id="tile">
-			<div id ="content">
-			<label for="uname" style="font-size: 24px; margin: 0px; margin-bottom: 5px"><b>Username</b>
-			<input type="email"/></label>	
-			<label for="psw" style="font-size: 24px; margin: 0px; margin-bottom: 5px"><b>Password</b>
-			<input type="password"/></label>
-			<button>Log In 🎟️
-			</button>
+
+<head>
+	<title>Resume Login Screen</title>
+	<link rel="shortcut icon" href="./assets/Images/rh.png" />
+	<link href="./loginstyle.css" rel="stylesheet" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <script type="text/javascript" src="./scripts/login.js"></script> -->
+	<script type="text/javascript">
+		const handleSubmit = () => {
+			const { creds } = "./Secure/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20/21/22/23/24/25/26/27/28/29/30/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79/80/81/82/83/84/85/86/87/88/89/90/91/92/93/94/95/96/97/98/99/100/101/102/103/104/105/106/107/108/109/110/111/112/113/114/115/116/117/118/119/120/121/122/123/124/125/126/127/128/129/130/131/132/133/134/135/136/137/138/139/140/141/142/143/144/145/146/147/148/149/150/151/152/153/154/155/156/157/158/159/160/161/162/163/164/165/166/167/168/169/170/171/172/173/174/175/176/177/178/179/180/181/182/183/184/185/186/187/188/189/190/191/192/193/194/195/196/197/198/199/200/201/202/203/204/205/206/207/208/209/210/211/212/213/214/215/216/217/218/219/220/221/222/223/224/225/226/227/228/229/230/231/232/233/234/235/236/237/238/239/240/data.js"
+			console.log(creds);	
+			console.log("hello")
+			alert("submitted")
+		}
+	</script>
+</head>
+
+<body>
+	<section id="title" style="text-align:center">
+		<h1>Login to Proceed</h1>
+	</section>
+	<video autoplay muted loop id="myVideo">
+		<source src="./assets/Videos/Cryptography.mp4" type="video/mp4">
+	</video>
+	<div id="tile">
+		<form method="POST" >
+
+			<div id="content">
+				<div id="mail">
+					<label><b>Username</b></label><span id="user_info" class="error-info"></span>
+					<input type="email" name="email" placeholder="abc@xyz.com" required />
+				</div>
+				<div id="pass">
+					<label><b>Password</b></label><span id="password_info" class="error-info"></span>
+					<input type="password" name="password" placeholder="Password" required />
+				</div>
+				<div>
+					<button type="buttom" onclick="handleSubmit()" name="login" value="Login" class="btnLogin">Login</button>
+				</div>
 			</div>
-		</div>
-	</body>
+		</form>
+	</div>
+</body>
+<footer>
+</footer>
+
 </html>

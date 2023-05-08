@@ -1,0 +1,84 @@
+body {
+    margin: 10px;
+    padding: 10px;
+    color: aliceblue;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(103, 161, 163, 0.582);
+    background-size: 100vmax;
+    align-content: center;
+    align-items: center;
+}
+
+label {
+    color: #f7fdfc;
+    font-size: 17px;
+}
+
+form {
+    align-content: center;
+}
+
+[id=tile] {
+    background-color: rgba(22, 54, 51, 0.918);
+    border-radius: 15px;
+    border-style: groove;
+    display: inline-flex;
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+
+    
+}
+
+[id=content] {
+    margin-top: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    align-content: center;
+}
+
+[id=title]{
+    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+}
+
+[id=myVideo] {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.error-message {
+    padding: 7px 10px;
+    background: rgba(22, 54, 51, 0.918);
+    color: #d6001c;
+    border-radius: 4px;
+    margin: 30px 10px 10px 10px;
+}
+
+.error-info {
+    color: #FF0000;
+    margin-left: 10px;
+}
+
+a.logout-button {
+    color: #09f;
+}
+
+.btnLogin {
+    padding: 13px;
+    background-color: #ffffff;
+    color: #063f24;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 25%;
+    align-self: center;
+}
